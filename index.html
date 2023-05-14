@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="img/Vector.png" alt="logo-alura">
+    </header>
+
+    <main class="main">
+
+        <!-- Input -->
+        <section class="section-input">
+            <div class="contenedor-textarea">
+                <textarea 
+                type="text"
+                id="textarea"
+                name="textarea" 
+                class="textarea" placeholder="Ingrese el texto aquí"                   
+            ></textarea>
+               
+                
+            </div>
+
+            <div class="btns">
+                <div class="condicion">
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    <p>Solo letras minúsculas y sin acentos</p>                 
+                </div>
+                <div class="content-btn">
+                    <button id="btn-encriptar" class="btn btn-encriptar">Encriptar</button>
+                <button id="btn-desencriptar" class="btn btn-desencriptar">Desencriptar</button>
+                </div>
+            </div>
+        </section>
+
+        <div id="validacion" class="validacion"></div>
+
+        <!-- Output -->
+        <section class="section-output-presentacion">
+            <div class="section-output-contenedor">
+                <img class="muñeco" src="img/Muñeco.png" alt="muñeco">
+                <h1>Ningun mensaje fue encontrado</h1>
+                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+        </section>
+
+        <!-- Salida de lo encriptado -->
+        <section class="section-output-encriptacion ">
+            <p id="salida" class="parrafo">salida</p>
+
+            <button class="btn-copiar">Copiar</button>
+        </section>
+
+       
+    </main>
+
+    <footer class="footer">
+        <p class="copyright">&#169 2023 Desarrollado by Joan Narvaez</p>
+    </footer>
+<script src="main.js"></script>
+</body>
+</html>
