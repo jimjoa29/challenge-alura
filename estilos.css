@@ -154,10 +154,10 @@ h1 {
 
 .section-output-encriptacion p {
     flex-grow: 1;
-    font-size: 16px;
+   
 }
 
-.section-output-encriptacion .btn-copiar {
+.section-output-encriptacion #btn-copiar {
     width: 200px;
     height: 35px;
     background-color: #d8dfe8;
